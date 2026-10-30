@@ -1,0 +1,25 @@
+# Executable & Object files
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Visual Studio / VS Code
+.vscode/
+.vs/
+
+# Large Model weights (>100MB exceeds GitHub hard limit)
+model/svm_model.xml
+*.xml
+*.bin
+
+# Dataset (Large image folders ~1.86 GB)
+dataset/
+**/dataset/
+
+# System / Temp files
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
