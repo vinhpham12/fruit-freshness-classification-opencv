@@ -1,6 +1,12 @@
-# Fruit Freshness Classification System using C++ & OpenCV (SVM)
+# Fruit Freshness Classification System using C++ & OpenCV (Dual Pipeline: SVM & CNN 98.30%)
 
-Hệ thống phân loại hoa quả tươi và hỏng sử dụng thị giác máy tính truyền thống (Computer Vision) và học máy (Machine Learning - SVM) xây dựng hoàn toàn bằng **C++** và thư viện **OpenCV**.
+Hệ thống phân loại hoa quả tươi và hỏng sử dụng thị giác máy tính và học sâu (Deep Learning CNN / SVM), hỗ trợ 2 pipeline song song:
+1. **Pipeline 1 (Truyền thống)**: SVM + HOG + 3D HSV Color Histogram (Độ chính xác: 93.40%).
+2. **Pipeline 2 (Hiện đại - Khuyên dùng)**: Mạng tích chập 5-Block CNN 224x224 với Global Average Pooling qua OpenCV DNN (Độ chính xác: **98.30%**, tốc độ: ~10ms).
+
+> 📖 **Xem báo cáo kỹ thuật chi tiết:**
+> * [**Báo cáo kỹ thuật Mô hình CNN 224x224 (98.30%)**](file:///d:/nam4/vinh/xla/bai_tap_lon/BAO_CAO_MO_HINH_CNN_224x224.md)
+> * [**So sánh chi tiết 2 Pipeline (SVM vs CNN)**](file:///d:/nam4/vinh/xla/bai_tap_lon/SO_SANH_HAI_PIPELINE.md)
 
 ---
 
