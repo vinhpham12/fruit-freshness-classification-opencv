@@ -91,10 +91,10 @@ int main()
         Mat img = imread(testImages[i]);
         if (img.empty()) continue;
 
-        // Chuẩn hóa và tạo Blob đầu vào [1, 3, 128, 128]
+        // Chuẩn hóa và tạo Blob đầu vào [1, 3, 224, 224]
         auto tStart = chrono::high_resolution_clock::now();
         Mat blob;
-        dnn::blobFromImage(img, blob, 1.0 / 255.0, Size(128, 128), Scalar(), true, false);
+        dnn::blobFromImage(img, blob, 1.0 / 255.0, Size(224, 224), Scalar(), true, false);
         net.setInput(blob);
         Mat prob = net.forward();
         auto tEnd = chrono::high_resolution_clock::now();

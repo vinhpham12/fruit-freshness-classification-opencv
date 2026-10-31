@@ -271,7 +271,7 @@ void predictFruitCNN(dnn::Net& net, const Mat& crop, int& outClassId, float& out
     }
 
     Mat blob;
-    dnn::blobFromImage(crop, blob, 1.0 / 255.0, Size(128, 128), Scalar(), true, false);
+    dnn::blobFromImage(crop, blob, 1.0 / 255.0, Size(224, 224), Scalar(), true, false);
     net.setInput(blob);
     Mat prob = net.forward();
 
